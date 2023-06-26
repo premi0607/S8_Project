@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #d9d9d9;
+  }
+  
+  th {
+    padding: 20px;
+    text-align: left;
+    background-color: #333333;
+    color: white;
+  }
+  
+  td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 5px solid #ffffff;
+    
+  
+  }
+  
+  tr:hover {background-color: #f2f2f2;}
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  input[type=text] {
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 50%;
+  }
+  

@@ -1,0 +1,32 @@
+<div class="main">
+<br>
+
+<i class="fa fa-search fa-fw"></i><label for="searchBox"><b>Search : </b></label><br>
+
+<input type ="text" id ="searchBox" [(ngModel)]="searchName"><br><br>
+
+<table>
+    <thead>
+        <tr>
+            <th>TASK HOLDER NAME</th>
+            <th>TASK</th>
+            <th>STATUS</th>
+            <th>DUE DATE</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let task of tasks | filter: searchName" >
+            <td>{{task.taskHolder}}</td>
+            <td>{{task.taskName}}</td>
+            <td>{{task.taskStatus}}</td>
+            <td>{{task.taskDate}}</td>
+            <td>
+                <button (click) = "updateTask(task.id)" class ="btn btn-dark">Update</button>
+                <button (click) = "deleteTask(task.id)" class ="btn btn-dark" style="margin-left: 10px;">Delete</button> 
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+</div>
